@@ -50,14 +50,17 @@ Student card: 17% off
 
 ## Part 5: Bag and BigBag
 
-**My prediction:**
+### My Prediction
 
-(Write your predicted output before running the program.)
+I predict the output will be:
 
-**Real output:**
+```text
+1
+5
+```
 
-(Paste the actual output after running the program.)
+**Why?**
 
-**Was I right?**
+The first bag starts with 0 items. Calling `a.add()` increases the items to 1. The setter rejects -5 because it does not accept negative values, so the value remains 1.
 
-(Explain whether your prediction matched the actual output.)
+The BigBag adds 2 items every time `add()` is called. After calling it twice, there are 4 items. Then `b.items = b.items + 1` increases the total to 5.
