@@ -64,6 +64,10 @@ class StudentCard extends BusCard {
 
   @override
   void pay(int fare) {
+    int off = _discount * fare ~/100;
+    print('Student discount: $off RWF');
+    super.pay(fare - off);
+
     
   }
 }
