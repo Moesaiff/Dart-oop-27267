@@ -18,19 +18,35 @@ class BusCard {
       _owner = newName;
     }
   }
-
+    int get balance{
+      return _balance;
+      }
   void showInfo() {
     print('Owner: $_owner | Balance: $_balance RWF');
   }
 
   void topUp(int amount) {
+    if (amount < 500){
+      print('Your amount triying to deposit is less or equal to 500');
+    }else{
+      _balance += amount;
+      print('You have Successfully deposit $amount in your wallet');
+  }
+  }
+
+    void pay(int fare) {
+    if (fare > _balance) {
+      print('Card declined');
+    } else {
+      _balance -= fare;
+      print('Paid $fare RWF');
+    }
+  }
     
   }
 
-  void pay(int fare) {
-    
-  }
-}
+  
+
 
 class StudentCard extends BusCard {
   int _discount = 0;
