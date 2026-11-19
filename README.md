@@ -14,7 +14,7 @@
 (To be completed after Part 3)
 
 ## Part 1: Why no setter for balance?
-(To be completed after Part 1)
+We don't use a setter for the balance because we want to protect it from invalid changes. Instead, we use `topUp()` and `pay()` to control how the balance increases and decreases.
 
 ## Part 2: What does ~/ do?
 (To be completed after Part 2)
