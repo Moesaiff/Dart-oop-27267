@@ -17,7 +17,7 @@
 We don't use a setter for the balance because we want to protect it from invalid changes. Instead, we use `topUp()` and `pay()` to control how the balance increases and decreases.
 
 ## Part 2: What does ~/ do?
-(To be completed after Part 2)
+The `~/` operator performs integer division. It returns an integer and removes the decimal part of the result, while `/` returns a double.
 
 ## Part 4: Bug table
 (To be completed after Part 4)
