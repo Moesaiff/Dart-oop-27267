@@ -1,0 +1,24 @@
+# Dart OOP Assignment: Kigali Bus Card
+
+**Name:** Mohammed Hammed  
+**Student ID:** 27267
+
+## My numbers
+- D = 67
+- L = 7
+- Starting balance = 1670 RWF
+- Bus fare = 267 RWF
+- Student discount = 17%
+
+## Output of main.dart
+(To be completed after Part 3)
+
+## Part 1: Why no setter for balance?
+(To be completed after Part 1)
+
+## Part 2: What does ~/ do?
+(To be completed after Part 2)
+
+## Part 4: Bug table
+(To be completed after Part 4)
+
