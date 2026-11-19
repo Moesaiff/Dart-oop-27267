@@ -39,17 +39,14 @@ Student card: 17% off
 
 ## Part 4: Bug Hunt
 
-
-
-(To be completed after Part 4.)
-
-| Bug | Explanation | Fix |
-|---|---|---|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
+| Bug | The line | Why it is wrong (your words) | Your fix |
+|---|---|---|---|
+| 1 | `String _brand;` and `int _battery;` | These fields do not have initial values, but they are non-nullable. | Initialize them with `String _brand = '';` and `int _battery = 0;` |
+| 2 | `SmartPhone(String brand, int battery, String system)` | The child constructor does not call the parent constructor. | Add `: super(brand, battery)` |
+| 3 | `@override void restart()` | The parent class does not have a `restart()` method to override. | Add `void restart()` to the `Phone` class. |
+| 4 | `p.battery = 100;` | The `Phone` class has no setter for battery. | Add a setter that accepts values from 0 to 100. |
+| 5 | `print(p.battery());` | A getter is accessed like a property, not called like a method. | Change it to `print(p.battery);` |
+| Not a bug | `Phone p = new Phone('Tecno', 50);` | Using `new` is valid Dart syntax. | No fix needed. |
 
 ## Part 5: Bag and BigBag
 
